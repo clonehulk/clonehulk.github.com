@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://clonehulk.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Clone's Blog
+subtitle: A blog about technology.
+author: Clonehu
 simple_search: http://google.com/search
 description:
 
@@ -97,4 +97,7 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
+
+# Chinese Weibo
+weibo_share:true
