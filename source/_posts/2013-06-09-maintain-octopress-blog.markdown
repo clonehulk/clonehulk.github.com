@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 This notes is about how to maintain Octopress blog in Github.
-<!—more—>
+<!-- more -->
 1. Clone your blog from Github
     <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git</code></pre>
 
