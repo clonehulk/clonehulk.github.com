@@ -15,7 +15,7 @@ Currently, my research interests are mainly on
   - Topic modeling
   - Text mining
     
-I also interested in Machine learning.
+I also interested in Machine Learning.
 
 
 Contact  me
@@ -36,7 +36,7 @@ The fast way to find me is sending email. You can easily find my email address i
   [Linkedin]: http://www.linkedin.com/in/clonehulk
   [Twitter]: https://twitter.com/clone_hulk
   [Facebook]: https://www.facebook.com/clone.hu
-  [Weibo]: https://www.weibo.com/clone
+  [Weibo]: http://www.weibo.com/clone
   
   
 
