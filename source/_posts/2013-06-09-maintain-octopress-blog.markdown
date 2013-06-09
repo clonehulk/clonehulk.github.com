@@ -8,27 +8,39 @@ categories:
 This notes is about how to maintain Octopress blog in Github.
 <!-- more -->
 1. Clone your blog from Github
-    <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git</code></pre>
+{% codeblock lang:bash %}
+git clone git@github.com:clonehulk/clonehulk.github.com.git
+{% endcodeblock %}
 
 2. Checkout the source branch:
-    <pre><code>git checkout source</code></pre>
+{% codeblock lang:bash %}
+git checkout source
+{% endcodeblock %}
 
 3. Set the relationship between your local folder and Github pages:
-    <pre><code>rake setup_github_pages</code></pre>
+{% codeblock lang:bash %}
+rake setup_github_pages
+{% endcodeblock %}
     And follow the message to enter some information.
 
 4. Update your latest blog source code:
-	<pre><code>git pull origin source  # update the local source branch</code></pre>
-    
+{% codeblock lang:bash %}
+git pull origin source  # update the local source branch
+{% endcodeblock %}
+
 5. Write new blogs:
-    <pre><code>rake new_post["title"]
+{% codeblock lang:bash %}
+rake new_post["title"]
 rake generate
-rake preview</code></pre>
+rake preview
+{% endcodeblock %}
 
 6. Commit to Github:
-    <pre><code>rake deploy
+{% codeblock lang:bash %}
+rake deploy
 git add .
 git commit -am 'comment'
-git push origin source</code></pre>
+git push origin source
+{% endcodeblock %}
 
 Want to config your Octopress? Try this:[Configuring Octopress](http://octopress.org/docs/configuring/).
