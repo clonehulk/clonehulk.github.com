@@ -8,7 +8,7 @@ categories:
 The default version of Ruby on Mac OXS is 1.8.7. But the Ruby Rails needs Ruby 1.9.3 or further. So we need update it.
 
 Here is the notes about updating Ruby on Mac.
-
+<!—more—>
 1. Installing [RVM(Ruby Version Manager)](https://rvm.io/) for upgrading Ruby on OXS:
     <pre><code>\curl -L get.rvm.io | bash -s stable</code></pre>
 3. Using this command to show all the available versions of Ruby.

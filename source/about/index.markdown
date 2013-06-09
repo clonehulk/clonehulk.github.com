@@ -4,8 +4,6 @@ title: "About me"
 comments: true
 categories: 
 ---
-About me
-=========
 
 I am a MPhil student in School of Computer Engineering ([SCE](http://sce.ntu.edu.sg/Pages/Home.aspx)), [Nanyang Technological University](http://www.ntu.edu.sg/).
 
