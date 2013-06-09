@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>fortest - Clone's Blog</title>
+  <title>Maintain Octopress blog - Clone's Blog</title>
   <meta name="author" content="Clonehu">
 
   
-  <meta name="description" content="asdfadf asdfasdfasdf asd
-fasdf
-">
+  <meta name="description" content="This notes is about how to maintain Octopress blog in Github. Clone your blog from Github git clone git@github.com:clonehulk/clonehulk.github.com.git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ fasdf
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://clonehulk.github.io/blog/2013/06/06/fortest">
+  <link rel="canonical" href="http://clonehulk.github.io/blog/2013/06/09/maintain-octopress-blog">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Clone's Blog" type="application/atom+xml">
@@ -71,7 +69,7 @@ fasdf
   
   <header>
     
-      <h1 class="entry-title">Fortest</h1>
+      <h1 class="entry-title">Maintain Octopress Blog</h1>
     
     
       <p class="meta">
@@ -87,19 +85,42 @@ fasdf
   
 
 
-<time datetime="2013-06-06T19:07:00+08:00" pubdate data-updated="true">Jun 6<span>th</span>, 2013</time>
+<time datetime="2013-06-09T01:27:00+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>asdfadf</p>
+<div class="entry-content"><p>This notes is about how to maintain Octopress blog in Github.</p>
 
-<p>asdfasdfasdf</p>
+<ol>
+<li><p>Clone your blog from Github
+ <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git
+ </code></pre></p></li>
+<li><p>Checkout the source branch:
+ <pre><code>git checkout source
+ </code></pre></p></li>
+<li><p>Set the relationship between your local folder and Github pages:
+ <pre><code>rake setup_github_pages
+ </code></pre>
+ And follow the message to enter some information.</p></li>
+<li><p>Update your latest blog source code:
+ <pre><code>git pull origin source  # update the local source branch
+ </code></pre></p></li>
+<li><p>Write new blogs:
+ <pre><code>rake new_post[&ldquo;title&rdquo;]
+rake generate
+rake preview
+ </code></pre></p></li>
+<li><p>Commit to Github:
+ <pre><code>rake deploy
+git add .
+git commit -am &lsquo;comment&rsquo;
+git push origin source
+ </code></pre></p></li>
+</ol>
 
-<p>asd
-fasdf</p>
 </div>
 
 
@@ -122,7 +143,7 @@ fasdf</p>
   
 
 
-<time datetime="2013-06-06T19:07:00+08:00" pubdate data-updated="true">Jun 6<span>th</span>, 2013</time>
+<time datetime="2013-06-09T01:27:00+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
       
 
 
@@ -130,7 +151,7 @@ fasdf</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://clonehulk.github.io/blog/2013/06/06/fortest/" data-via="" data-counturl="http://clonehulk.github.io/blog/2013/06/06/fortest/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://clonehulk.github.io/blog/2013/06/09/maintain-octopress-blog/" data-via="" data-counturl="http://clonehulk.github.io/blog/2013/06/09/maintain-octopress-blog/" >Tweet</a>
   
   
   
@@ -158,8 +179,8 @@ var jiathis_config={
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/06/06/Ruby-on-Mac/" title="Previous Post: Ruby on Mac">&laquo; Ruby on Mac</a>
       
-        <a class="basic-alignment right" href="/blog/2013/06/06/test-from-git/" title="Next Post: test from git">test from git &raquo;</a>
       
     </p>
   </footer>
@@ -174,11 +195,11 @@ var jiathis_config={
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/06/06/test-from-git/">Test From Git</a>
+        <a href="/blog/2013/06/09/maintain-octopress-blog/">Maintain Octopress Blog</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/06/06/fortest/">Fortest</a>
+        <a href="/blog/2013/06/06/Ruby-on-Mac/">Ruby on Mac</a>
       </li>
     
   </ul>

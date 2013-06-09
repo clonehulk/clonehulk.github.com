@@ -9,8 +9,7 @@
   <meta name="author" content="Clonehu">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="This notes is about how to maintain Octopress blog in Github. Clone your blog from Github git clone git@github.com:clonehulk/clonehulk.github.com.git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,7 +72,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/06/06/test-from-git/">Test From Git</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/06/09/maintain-octopress-blog/">Maintain Octopress Blog</a></h1>
     
     
       <p class="meta">
@@ -89,14 +88,42 @@
   
 
 
-<time datetime="2013-06-06T20:00:00+08:00" pubdate data-updated="true">Jun 6<span>th</span>, 2013</time>
+<time datetime="2013-06-09T01:27:00+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><p>This notes is about how to maintain Octopress blog in Github.</p>
+
+<ol>
+<li><p>Clone your blog from Github
+ <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git
+ </code></pre></p></li>
+<li><p>Checkout the source branch:
+ <pre><code>git checkout source
+ </code></pre></p></li>
+<li><p>Set the relationship between your local folder and Github pages:
+ <pre><code>rake setup_github_pages
+ </code></pre>
+ And follow the message to enter some information.</p></li>
+<li><p>Update your latest blog source code:
+ <pre><code>git pull origin source  # update the local source branch
+ </code></pre></p></li>
+<li><p>Write new blogs:
+ <pre><code>rake new_post[&ldquo;title&rdquo;]
+rake generate
+rake preview
+ </code></pre></p></li>
+<li><p>Commit to Github:
+ <pre><code>rake deploy
+git add .
+git commit -am &lsquo;comment&rsquo;
+git push origin source
+ </code></pre></p></li>
+</ol>
+
 </div>
   
   
@@ -109,7 +136,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/06/06/fortest/">Fortest</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/06/06/Ruby-on-Mac/">Ruby on Mac</a></h1>
     
     
       <p class="meta">
@@ -132,12 +159,23 @@
   </header>
 
 
-  <div class="entry-content"><p>asdfadf</p>
+  <div class="entry-content"><p>The default version of Ruby on Mac OXS is 1.8.7. But the Ruby Rails needs Ruby 1.9.3 or further. So we need update it.</p>
 
-<p>asdfasdfasdf</p>
+<p>Here is the notes about updating Ruby on Mac.</p>
 
-<p>asd
-fasdf</p>
+<ol>
+<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:
+ <pre><code>\curl -L get.rvm.io | bash -s stable</code></pre></li>
+<li>Using this command to show all the available versions of Ruby.
+ <pre><code>rvm list known</code></pre></li>
+<li>Installing one particular version, for example:
+ <pre><code>rvm install ruby 1.9.3</code></pre></li>
+<li>Or if you just want the latest (current) version:
+ <pre><code>rvm install current &amp;&amp; rvm use current</code></pre></li>
+</ol>
+
+
+<p>Please note that don&rsquo;t uninstall the default version of Ruby on Mac.</p>
 </div>
   
   
@@ -158,11 +196,11 @@ fasdf</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/06/06/test-from-git/">Test From Git</a>
+        <a href="/blog/2013/06/09/maintain-octopress-blog/">Maintain Octopress Blog</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/06/06/fortest/">Fortest</a>
+        <a href="/blog/2013/06/06/Ruby-on-Mac/">Ruby on Mac</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Clone's Blog]]></title>
   <link href="http://clonehulk.github.io/atom.xml" rel="self"/>
   <link href="http://clonehulk.github.io/"/>
-  <updated>2013-06-06T20:32:15+08:00</updated>
+  <updated>2013-06-09T21:21:37+08:00</updated>
   <id>http://clonehulk.github.io/</id>
   <author>
     <name><![CDATA[Clonehu]]></name>
@@ -14,25 +14,64 @@
 
   
   <entry>
-    <title type="html"><![CDATA[test from git]]></title>
-    <link href="http://clonehulk.github.io/blog/2013/06/06/test-from-git/"/>
-    <updated>2013-06-06T20:00:00+08:00</updated>
-    <id>http://clonehulk.github.io/blog/2013/06/06/test-from-git</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[Maintain Octopress blog]]></title>
+    <link href="http://clonehulk.github.io/blog/2013/06/09/maintain-octopress-blog/"/>
+    <updated>2013-06-09T01:27:00+08:00</updated>
+    <id>http://clonehulk.github.io/blog/2013/06/09/maintain-octopress-blog</id>
+    <content type="html"><![CDATA[<p>This notes is about how to maintain Octopress blog in Github.</p>
+
+<ol>
+<li><p>Clone your blog from Github
+ <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git
+ </code></pre></p></li>
+<li><p>Checkout the source branch:
+ <pre><code>git checkout source
+ </code></pre></p></li>
+<li><p>Set the relationship between your local folder and Github pages:
+ <pre><code>rake setup_github_pages
+ </code></pre>
+ And follow the message to enter some information.</p></li>
+<li><p>Update your latest blog source code:
+ <pre><code>git pull origin source  # update the local source branch
+ </code></pre></p></li>
+<li><p>Write new blogs:
+ <pre><code>rake new_post[&ldquo;title&rdquo;]
+rake generate
+rake preview
+ </code></pre></p></li>
+<li><p>Commit to Github:
+ <pre><code>rake deploy
+git add .
+git commit -am &lsquo;comment&rsquo;
+git push origin source
+ </code></pre></p></li>
+</ol>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[fortest]]></title>
-    <link href="http://clonehulk.github.io/blog/2013/06/06/fortest/"/>
+    <title type="html"><![CDATA[Ruby on Mac]]></title>
+    <link href="http://clonehulk.github.io/blog/2013/06/06/Ruby-on-Mac/"/>
     <updated>2013-06-06T19:07:00+08:00</updated>
-    <id>http://clonehulk.github.io/blog/2013/06/06/fortest</id>
-    <content type="html"><![CDATA[<p>asdfadf</p>
+    <id>http://clonehulk.github.io/blog/2013/06/06/Ruby-on-Mac</id>
+    <content type="html"><![CDATA[<p>The default version of Ruby on Mac OXS is 1.8.7. But the Ruby Rails needs Ruby 1.9.3 or further. So we need update it.</p>
 
-<p>asdfasdfasdf</p>
+<p>Here is the notes about updating Ruby on Mac.</p>
 
-<p>asd
-fasdf</p>
+<ol>
+<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:
+ <pre><code>\curl -L get.rvm.io | bash -s stable</code></pre></li>
+<li>Using this command to show all the available versions of Ruby.
+ <pre><code>rvm list known</code></pre></li>
+<li>Installing one particular version, for example:
+ <pre><code>rvm install ruby 1.9.3</code></pre></li>
+<li>Or if you just want the latest (current) version:
+ <pre><code>rvm install current &amp;&amp; rvm use current</code></pre></li>
+</ol>
+
+
+<p>Please note that don&rsquo;t uninstall the default version of Ruby on Mac.</p>
 ]]></content>
   </entry>
   
