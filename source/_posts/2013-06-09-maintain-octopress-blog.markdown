@@ -21,7 +21,8 @@ git checkout source
 {% codeblock lang:bash %}
 rake setup_github_pages
 {% endcodeblock %}
-    And follow the message to enter some information.
+
+And follow the message to enter some information.
 
 4. Update your latest blog source code:
 {% codeblock lang:bash %}
