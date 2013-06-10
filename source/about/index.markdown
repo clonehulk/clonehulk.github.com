@@ -15,7 +15,7 @@ Currently, my research interests are mainly on
   - Topic modeling
   - Text mining
     
-I also interested in Machine Learning.
+I am also interested in Machine Learning.
 
 
 Contact  me
@@ -27,7 +27,7 @@ You can find me in the following site:
 * [Twitter] - Seldom
 * [Weibo] - Chinese twitter
 
-The fast way to find me is sending email. You can easily find my email address in the above sites.
+The fastest way to find me is sending email. You can easily find my email address in the above sites.
 
 
 **Stay Hungry, Stay Foolish**
