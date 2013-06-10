@@ -3,7 +3,7 @@ layout: post
 title: "Maintain Octopress blog"
 date: 2013-06-09 01:27
 comments: true
-categories: 
+categories: Notes
 ---
 This notes is about how to maintain Octopress blog in Github.
 <!-- more -->
