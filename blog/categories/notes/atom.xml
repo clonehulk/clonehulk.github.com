@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Notes | Clone's Blog]]></title>
   <link href="http://clonehulk.github.io/blog/categories/notes/atom.xml" rel="self"/>
   <link href="http://clonehulk.github.io/"/>
-  <updated>2013-06-10T14:24:32+08:00</updated>
+  <updated>2013-06-10T14:29:15+08:00</updated>
   <id>http://clonehulk.github.io/</id>
   <author>
     <name><![CDATA[Clonehu]]></name>
@@ -80,20 +80,28 @@ And follow the message to enter some information.</p></li>
 
 <ol>
 <li><p>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+ <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>curl -L get.rvm.io | bash -s stable
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
 <li><p>Using this command to show all the available versions of Ruby.
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+ <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">list</span> <span class="n">known</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
 <li><p>Installing one particular version, for example:
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+ <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">ruby</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
 <li><p>Or if you just want the latest (current) version:
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+ <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">current</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="n">rvm</span> <span class="n">use</span> <span class="n">current</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
 </ol>
 
