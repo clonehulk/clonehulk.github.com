@@ -9,7 +9,8 @@
   <meta name="author" content="Clonehu">
 
   
-  <meta name="description" content="This notes is about how to maintain Octopress blog in Github. Clone your blog from Github git clone git@github.com:clonehulk/clonehulk.github.com.git &hellip;">
+  <meta name="description" content="This notes is about how to maintain Octopress blog in Github. Clone your blog from Github 1
+git clone git@github.com:clonehulk/clonehulk.github.com. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -53,7 +54,7 @@
     <h2>A blog about technology.</h2>
   
 </hgroup>
-
+<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
@@ -110,25 +111,75 @@
 
 
 <ol>
-<li><p>Clone your blog from Github
- <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git</code></pre></p></li>
-<li><p>Checkout the source branch:
- <pre><code>git checkout source</code></pre></p></li>
-<li><p>Set the relationship between your local folder and Github pages:
- <pre><code>rake setup_github_pages</code></pre>
- And follow the message to enter some information.</p></li>
-<li><p>Update your latest blog source code:
- <pre><code>git pull origin source  # update the local source branch</code></pre></p></li>
-<li><p>Write new blogs:
- <pre><code>rake new_post[&ldquo;title&rdquo;]
-rake generate
-rake preview</code></pre></p></li>
-<li><p>Commit to Github:
- <pre><code>rake deploy
-git add .
-git commit -am &lsquo;comment&rsquo;
-git push origin source</code></pre></p></li>
+<li>Clone your blog from Github</li>
 </ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone git@github.com:clonehulk/clonehulk.github.com.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Checkout the source branch:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git checkout <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Set the relationship between your local folder and Github pages:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake setup_github_pages
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And follow the message to enter some information.</p>
+
+<ol>
+<li>Update your latest blog source code:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git pull origin <span class="nb">source</span>  <span class="c"># update the local source branch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Write new blogs:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake new_post<span class="o">[</span><span class="s2">&quot;title&quot;</span><span class="o">]</span>
+</span><span class='line'>rake generate
+</span><span class='line'>rake preview
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Commit to Github:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake deploy
+</span><span class='line'>git add .
+</span><span class='line'>git commit -am <span class="s1">&#39;comment&#39;</span>
+</span><span class='line'>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Want to config your Octopress? Try this:<a href="http://octopress.org/docs/configuring/">Configuring Octopress</a>.</p>
@@ -156,6 +207,12 @@ git push origin source</code></pre></p></li>
 
 <time datetime="2013-06-09T01:27:00+08:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/notes/'>Notes</a>
+  
+</span>
 
 
     </p>

@@ -53,7 +53,7 @@
     <h2>A blog about technology.</h2>
   
 </hgroup>
-
+<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
@@ -112,15 +112,43 @@
 
 
 <ol>
-<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:
- <pre><code>\curl -L get.rvm.io | bash -s stable</code></pre></li>
-<li>Using this command to show all the available versions of Ruby.
- <pre><code>rvm list known</code></pre></li>
-<li>Installing one particular version, for example:
- <pre><code>rvm install ruby 1.9.3</code></pre></li>
-<li>Or if you just want the latest (current) version:
- <pre><code>rvm install current &amp;&amp; rvm use current</code></pre></li>
+<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:</li>
 </ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl -L get.rvm.io | bash -s stable
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Using this command to show all the available versions of Ruby.</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">list</span> <span class="n">known</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Installing one particular version, for example:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">ruby</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Or if you just want the latest (current) version:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">current</span> <span class="o">&amp;&amp;</span> <span class="n">rvm</span> <span class="n">use</span> <span class="n">current</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Please note that don&rsquo;t uninstall the default version of Ruby on Mac.</p>
@@ -148,6 +176,12 @@
 
 <time datetime="2013-06-06T19:07:00+08:00" pubdate data-updated="true">Jun 6<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/notes/'>Notes</a>
+  
+</span>
 
 
     </p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Clone's Blog]]></title>
   <link href="http://clonehulk.github.io/atom.xml" rel="self"/>
   <link href="http://clonehulk.github.io/"/>
-  <updated>2013-06-09T22:09:31+08:00</updated>
+  <updated>2013-06-10T14:24:32+08:00</updated>
   <id>http://clonehulk.github.io/</id>
   <author>
     <name><![CDATA[Clonehu]]></name>
@@ -24,25 +24,75 @@
 
 
 <ol>
-<li><p>Clone your blog from Github
- <pre><code>git clone git@github.com:clonehulk/clonehulk.github.com.git</code></pre></p></li>
-<li><p>Checkout the source branch:
- <pre><code>git checkout source</code></pre></p></li>
-<li><p>Set the relationship between your local folder and Github pages:
- <pre><code>rake setup_github_pages</code></pre>
- And follow the message to enter some information.</p></li>
-<li><p>Update your latest blog source code:
- <pre><code>git pull origin source  # update the local source branch</code></pre></p></li>
-<li><p>Write new blogs:
- <pre><code>rake new_post[&ldquo;title&rdquo;]
-rake generate
-rake preview</code></pre></p></li>
-<li><p>Commit to Github:
- <pre><code>rake deploy
-git add .
-git commit -am &lsquo;comment&rsquo;
-git push origin source</code></pre></p></li>
+<li>Clone your blog from Github</li>
 </ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone git@github.com:clonehulk/clonehulk.github.com.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Checkout the source branch:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git checkout <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Set the relationship between your local folder and Github pages:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake setup_github_pages
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And follow the message to enter some information.</p>
+
+<ol>
+<li>Update your latest blog source code:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git pull origin <span class="nb">source</span>  <span class="c"># update the local source branch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Write new blogs:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake new_post<span class="o">[</span><span class="s2">&quot;title&quot;</span><span class="o">]</span>
+</span><span class='line'>rake generate
+</span><span class='line'>rake preview
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Commit to Github:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake deploy
+</span><span class='line'>git add .
+</span><span class='line'>git commit -am <span class="s1">&#39;comment&#39;</span>
+</span><span class='line'>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Want to config your Octopress? Try this:<a href="http://octopress.org/docs/configuring/">Configuring Octopress</a>.</p>
@@ -62,15 +112,43 @@ git push origin source</code></pre></p></li>
 
 
 <ol>
-<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:
- <pre><code>\curl -L get.rvm.io | bash -s stable</code></pre></li>
-<li>Using this command to show all the available versions of Ruby.
- <pre><code>rvm list known</code></pre></li>
-<li>Installing one particular version, for example:
- <pre><code>rvm install ruby 1.9.3</code></pre></li>
-<li>Or if you just want the latest (current) version:
- <pre><code>rvm install current &amp;&amp; rvm use current</code></pre></li>
+<li>Installing <a href="https://rvm.io/">RVM(Ruby Version Manager)</a> for upgrading Ruby on OXS:</li>
 </ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl -L get.rvm.io | bash -s stable
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Using this command to show all the available versions of Ruby.</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">list</span> <span class="n">known</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Installing one particular version, for example:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">ruby</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Or if you just want the latest (current) version:</li>
+</ol>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="n">current</span> <span class="o">&amp;&amp;</span> <span class="n">rvm</span> <span class="n">use</span> <span class="n">current</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Please note that don&rsquo;t uninstall the default version of Ruby on Mac.</p>
